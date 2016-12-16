@@ -1,0 +1,38 @@
+header{
+	border: 3px solid black;
+	background: url("fond_header.jpg") no-repeat top;
+}
+header p{
+	color: white;
+	text-align: center;
+}
+
+/* CSS du menu */
+.menu {
+  margin-top: 0px;
+}
+.menu a:link, .menu a:visited { 
+  color:#000;
+  text-decoration:none;
+  float:left;
+  height:3.5em;
+  overflow:hidden;
+}
+.menu span {
+  background:lightgrey;
+  display:inline-block;
+  line-height:3em;
+  padding:0 35px;
+  margin-top:0.2em;
+  position:relative;
+  transition: background-color 0.2s, margin-top 0.2s;
+}
+.menu a:hover span {
+  background:lightblue;
+  margin-top:0;
+}
+
+
+footer {
+		background-color: rgb(30,60,255);
+}

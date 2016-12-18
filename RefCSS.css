@@ -1,6 +1,6 @@
 header{
 	border: 3px solid black;
-	background: url("fond_header.jpg") no-repeat top;
+	background: url("fond_header.jpg") top; /* faut une image qui commence et finit sur le même ton pour que ça fasse raccord */
 }
 header p{
 	color: white;
@@ -17,26 +17,32 @@ header p{
   float:left;
   height:3.5em;
   overflow:hidden;
+  width:25%; /* espace les boutons par rapport à la taille de l'écran */
 }
+
 .menu span {
   background:lightgrey;
   display:inline-block;
   line-height:3em;
-  padding:0 35px;
+  padding:0 50%; /*taille des boutons adaptive*/
   margin-top:0.2em;
   position:relative;
   transition: background-color 0.2s, margin-top 0.2s;
 }
-.menu a:hover span {
+.menu a:hover span { 
   background:lightblue;
   margin-top:0;
+
 }
 
+/* fin CSS du menu */
 
 footer {
-		background-color: rgb(30,60,235);
+		background-color: rgb(30,80,215);
+		border: 3px solid grey;
 }
 footer p{
+	padding-top: 5px;
 	display: inline-block;
 	margin: 0 15px;
 }

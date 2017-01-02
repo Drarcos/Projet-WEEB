@@ -1,3 +1,4 @@
+/*entête de la page*/
 header{
 	border: 3px solid black;
 	background: url("fond_header.jpg") top; /* faut une image qui commence et finit sur le même ton pour que ça fasse raccord */
@@ -11,7 +12,7 @@ header p{
 .menu {
   margin-top: 0px;
 }
-.menu a:link, .menu a:visited { 
+.menu a:link, .menu a:visited { /*les caractéristiques de liens du menu*/ 
   color:#000;
   text-decoration:none;
   float:left;
@@ -29,13 +30,20 @@ header p{
   position:relative;
   transition: background-color 0.2s, margin-top 0.2s;
 }
-.menu a:hover span { 
+.menu a:hover span { /*ce que le menu fait lors du passage de la sourie au dessus des zones du menu*/
   background:lightblue;
   margin-top:0;
 
 }
-
 /* fin CSS du menu */
+
+/*les images des robots*/
+.robot img{
+	width: 90px;
+	height: 80px;
+}
+
+/* corps central de la page*/
 article{
 	display: inline-block;
 	border: 3px solid grey;
@@ -57,15 +65,15 @@ aside div {
 	
 	margin bottom: 1px;
 }
-
+ /* bas de la page */
 footer {
 		margin-top: 5px;
 		background-color: rgb(20,70,210);
 		border: 3px solid grey;
 }
 footer p{
+	text-align: center;
 	padding-top: 5px;
-	display: inline-block;
 	margin: 0 15px;
 }
 

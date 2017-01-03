@@ -43,13 +43,13 @@ header p{
 	height: 100px;
 }
 .IUT{
-	width:350px;
+	max-width: 100%;
 	padding : 1%;
 	border: 3px;
 }
 .IUT img{
-	width: 350px;
-	height: 125px;
+	max-width: 245%;
+	max-height: 79%;
 }
 body {
 	background-color : #9A9A9A;
@@ -76,9 +76,7 @@ aside div {
 	border-radius: 10px;
 	width: 40%;
 	height :100%;
-	margin bottom: 1px;
-	
-
+	margin-bottom: 1px;
 }
 aside
 {
@@ -89,7 +87,24 @@ aside
 	padding: 2px;
 	border-radius: 5px;
 }
-
+aside form {
+	margin: 3px;
+}
+.formulaire{ /*séparation du logo aside et du formulaire*/
+	width: 100%;
+	border: 1px;
+	border-radius: 0px;
+	background-color: lightgrey;
+}
+.espace{ /*classe pour l'espace du formulaire plus large*/
+	width: 79%;
+	height: 50px;
+	margin: 2px;
+}
+.champ{ /*taille adapté des formulaires de type texte*/
+	width: 79%;
+	margin: 2px;
+}
  /* bas de la page */
 footer {
 		margin-top: 5px;

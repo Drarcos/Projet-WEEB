@@ -1,9 +1,13 @@
 /*entête de la page*/
 header{
 	border: 3px solid black;
-	background: url("fond_header.jpg") top; /* faut une image qui commence et finit sur le même ton pour que ça fasse raccord */
+	background: url("fond_header.jpg") no-repeat ; /* faut une image qui commence et finit sur le même ton pour que ça fasse raccord */
+	background-size: 100%;
+	
 }
-header p{
+
+
+header h1{
 	color: white;
 	text-align: center;
 }
@@ -13,7 +17,7 @@ header p{
   margin-top: 0px;
 }
 .menu a:link, .menu a:visited { /*les caractéristiques de liens du menu*/ 
-  color:#000;
+  color:#FFF;
   text-decoration:none;
   float:left;
   height:3.5em;
@@ -22,7 +26,7 @@ header p{
 }
 
 .menu span {
-  background:lightgrey;
+  background:#434343;
   display:inline-block;
   line-height:3em;
   padding:0 50%; /*taille des boutons adaptive*/
@@ -31,14 +35,16 @@ header p{
   transition: background-color 0.2s, margin-top 0.2s;
 }
 .menu a:hover span { /*ce que le menu fait lors du passage de la sourie au dessus des zones du menu*/
-  background:lightblue;
-  margin-top:0;
+  background:#555555;
+  /*margin-top:0;*/
 
 }
 /* fin CSS du menu */
 
 body {
-	background-color : #9A9A9A;
+	/*background-color : #9A9A9A;*/
+	background: url("font.jpg") top;
+	font-family: ubuntu, sans-serif;
 }
 /* corps central de la page*/
 article{ /*partie gauche de la page*/
@@ -112,7 +118,7 @@ aside img {
 	width: 100%;
 	border: 1px;
 	border-radius: 0px;
-	background-color: lightgrey;
+/*	background-color: #434343;*/
 }
 .espace{ /*classe pour l'espace du formulaire plus large*/
 	width: 79%;
@@ -125,16 +131,24 @@ aside img {
 }
  /* bas de la page */
 footer {
-		margin-top: 5px;
-		background-color: rgb(20,70,210);
-		border: 3px solid grey;
+	/*position : fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+	margin-bottom: 0;
+	margin-top: 28px;
+	background-color: #2C2C2C;
+	border: 3px solid black;
 }
 footer p{
 	text-align: center;
 	padding-top: 5px;
 	margin: 0 15px;
+	color: white;
 }
-
+footer a{
+	color: #0AA;
+}
 footer ul li {
 	display: inline;
 	padding: 0 25px;

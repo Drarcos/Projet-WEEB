@@ -61,19 +61,7 @@ article a{
 	float: right;
 	text-decoration: none;
 }
-/*partie droite de la page*/
-/*les images des robots sur la page robot*/
-.robot {
-	border: none;
-	max-width: 25%;
-}
-.robot img{
-	max-width: 60%;
-	max-height: 50%;
-	margin: 5px;
-	border: 5px lightgrey;
-	border-radius: 10px;
-}
+
 /*image du logo de l'iut sur la page equipe*/
 .IUT{
 	max-width: 100%;
